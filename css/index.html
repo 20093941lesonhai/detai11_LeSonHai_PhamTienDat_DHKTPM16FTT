@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background: aliceblue;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .wrapper {
+        width: 1080px;
+        margin: auto;
+    }
+    
+    .logo {
+        height: 100px;
+        background: #ffffff;
+        text-align: center;
+        padding: 30px;
+        background-color: #ffffff;
+    }
+    
+    .menu {
+        height: 35px;
+        background-color: #b0b843;
+        display: flex;
+    }
+    
+    .banner {
+        height: 250px;
+        background-color: aqua;
+    }
+    
+    .content {
+        height: 985px;
+        background: #ffffff;
+    }
+    
+    footer {
+        height: 50px;
+        background: #b0b843;
+        font-size: 12px;
+        color: #ffffff;
+        text-align: center;
+        padding-top: 10px;
+    }
+    
+    .menu ul li {
+        list-style: none;
+        float: left;
+        line-height: 35px;
+        width: 120px;
+        position: relative;
+        padding-left: 10px;
+    }
+    
+    .menu ul li a {
+        color: white;
+        font-size: 15px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    .menu ul li a:hover {
+        text-decoration: underline;
+        color: yellow;
+    }
+    
+    .menu li .submenu {
+        display: none;
+        background-color: #b0b843;
+    }
+    
+    .menu li:hover .submenu {
+        display: block;
+        position: absolute;
+    }
+    
+    .text {
+        width: 150px;
+        height: 20px;
+        border: none;
+        background: #ffffff;
+        margin-top: 8px;
+        margin-left: 100px;
+    }
+    
+    .timkiem {
+        width: 70px;
+        height: 20px;
+        background: red;
+        border: 0.5px solid #ffffff;
+        color: #ffffff;
+    }
+    
+    form {
+        text-align: right;
+        margin-left: 35px;
+    }
+    
+    .banner img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .td {
+        width: 980px;
+        height: 65px;
+        line-height: 65px;
+    }
+    
+    .td p {
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .sp1 {
+        width: 315px;
+        height: 415px;
+        border: 0.5px solid #ffffff;
+        text-align: center;
+        float: left;
+    }
+    
+    .sp2 {
+        width: 315px;
+        height: 415px;
+        border: 0.5px solid #ffffff;
+        text-align: center;
+        float: left;
+    }
+    
+    .tensp a {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    .tensp {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .giagoc {
+        color: black;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: line-through;
+        margin-top: 20px;
+    }
+    
+    .giamoi {
+        color: red;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+    
+    .box {
+        width: 980px;
+        height: 415px;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <div class="logo">
+            <img src="../IMAGES/LOGO.png" alt="">
+
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="">Trang Chủ</a></li>
+                <li><a href="">Điện Thoại</a>
+                    <ul class="submenu">
+                        <li><a href="">Iphone</a></li>
+                        <li><a href="">Oppo</a></li>
+                        <li><a href="">SamSung</a></li>
+                        <li><a href="">Nokia</a></li>
+                        <li><a href="">Huawei</a></li>
+                    </ul>
+
+                </li>
+                <li><a href="">Phụ Kiện</a>
+                    <ul class="submenu">
+                        <li><a href="">Tai nghe</a></li>
+                        <li><a href="">Dây sạc</a></li>
+                        <li><a href="">Pin</a></li>
+                        <li><a href="">Màn hình</a></li>
+                        <li><a href="">Ốp lưng</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Dịch Vụ</a></li>
+                <li><a href="">Liên Hệ</a></li>
+            </ul>
+            <form action="">
+                <input type="text" required class="text">
+                <input type="submit" value="Tìm Kiếm" class="timkiem">
+
+            </form>
+        </div>
+        <div class="banner">
+            <img src="../IMAGES/Banner.jpg" alt="">
+
+        </div>
+        <div class="content">
+            <div class="td">
+                <p>ĐIỆN THOẠI IPHONE : </p>
+            </div>
+            <div class="box">
+                <div class="sp1">
+                    <p class="tensp"><a href="">Iphone 13 ProMax 128GB</a></p>
+                    <img src="../IMAGES/ip1.png" alt="">
+                    <p class="giagoc">Giá gốc: 33.990.000đ</p>
+                    <p class="giamoi">Giá siêu ưu đãi: 30.490.000đ</p>
+                </div>
+                <div class="sp1">
+                    <p class="tensp"><a href="">Iphone 13 128GB</a></p>
+                    <img src="../IMAGES/ip2.png" alt="">
+                    <p class="giagoc">Giá gốc: 24.990.000đ</p>
+                    <p class="giamoi">Giá siêu ưu đãi: 19.999.000đ</p>
+                </div>
+                <div class="sp1">
+                    <p class="tensp"><a href="">Iphone 13 Pro 128GB</a></p>
+                    <img src="../IMAGES/ip1.png" alt="">
+                    <p class="giagoc">Giá gốc: 31.990.000đ</p>
+                    <p class="giamoi">Giá siêu ưu đãi: 27.490.000đ</p>
+                </div>
+            </div>
+
+            <div class="td">
+                <p>ĐIỆN THOẠI OPPO : </p>
+            </div>
+            <div class="box">
+                <div class="sp2">
+                    <p class="tensp"><a href="">OPPO RENO 5</a></p>
+                    <img src="../IMAGES/Oppo.jpg" alt="">
+                    <p class="giagoc">Giá gốc: 11.900.000đ</p>
+                    <p class="giamoi">Giá siêu ưu đãi: 8.990.000đ</p>
+                </div>
+                <div class="sp2">
+                    <p class="tensp"><a href="">OPPO RENO 6</a></p>
+                    <img src="../IMAGES/reno6.png" alt="">
+                    <p class="giagoc">Giá gốc: 12.950.000đ</p>
+                    <p class="giamoi">Giá siêu ưu đãi: 11.190.000đ</p>
+                </div>
+                <div class="sp2">
+                    <p class="tensp"><a href="">OPPO RENO 7</a></p>
+                    <img src="../IMAGES/reno7.png" alt="">
+                    <p class="giagoc">Giá gốc: 13.990.000đ</p>
+                    <p class="giamoi">Giá siêu ưu đãi: 12.990.000đ</p>
+                </div>
+            </div>
+
+
+
+            <footer>
+                Nhóm 11 : Lê Sơn Hải-20093941 <br>Phạm Tiến Đạt-20093761
+            </footer>
+
+        </div>
+
+</body>
+
+</html>
